@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as m;
+@use '../components/buttons' as b;
+
+.form {
+    @include m.dflex(column, wrap, space-around, center, 1rem);
+    @include m.setbgcolor(bloc);
+    @include m.setfont(text);
+    width: 40%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    &__field {
+        @include m.dflex(column, wrap, space-between, center, 1rem);
+        @include m.setcolor(light);
+        width: 100%;
+        padding-bottom: 1rem;
+        &__input {
+            @include m.setcolor(dark);
+            @include m.setfont(text);
+            width: 80%;
+            max-width: 100%;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 0.5rem;
+        }
+    }
+    &__button {
+        @include m.setcolor(light);
+        @include b.btn(10px, text, primary, 1.5rem);
+        @include b.btn_padding(0.5rem, 2rem, 0.5rem, 2rem);
+    }
+}

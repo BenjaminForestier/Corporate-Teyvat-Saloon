@@ -1,0 +1,36 @@
+@use '../abstracts/mixins' as m;
+
+.about_section {
+    @include m.dflex(column, wrap, center, center, 5rem);
+    padding-bottom: 10vh;
+}
+
+.about {
+    @include m.setbgcolor(bloc);
+    @include m.setcolor(primary);
+    @include m.dflex(column, wrap, space-between, center, 1rem);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 80%;
+    @media screen and (max-width: 1470px) {
+        width: 90%;
+    }
+    &__title {
+        @include m.setfont(title);
+        font-size: 1.5rem;
+        @media screen and (max-width: 1470px) {
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &__text {
+        @include m.setfont(text);
+        font-size: 1rem;
+        &__strong {
+            font-weight: bold;
+        }
+        @media screen and (max-width: 1470px) {
+            font-size: 0.9rem;
+        }
+    }
+}

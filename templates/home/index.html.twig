@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent()}} | Accueil {% endblock %}
+
+{% block body %}
+
+<div class="presentations">
+    <h3 class="presentations__title">Quelques Informations</h3>
+    <div class="presentations__text">
+        <p>
+            À "Teyvat Saloon", nous croyons que les fans méritent le meilleur,
+            c'est pourquoi nous nous efforçons de créer des produits de qualité exceptionnelle qui capturent l'essence même de Genshin Impact.
+            Explorez notre vaste collection qui inclut des vêtements élégants, des accessoires de mode,
+            des articles de décoration pour la maison, des jouets et bien plus encore, le tout inspiré des personnages,
+            des lieux emblématiques et de l'esthétique unique du jeu.
+        </p>
+        <p>
+            Que vous soyez un voyageur aguerri ou un néophyte découvrant les merveilles de Teyvat,
+            nos produits sont conçus pour éveiller l'aventurier qui sommeille en vous. Chez "Teyvat Saloon",
+            nous nous engageons à offrir une expérience d'achat exceptionnelle,
+            avec des produits qui célèbrent votre passion pour Genshin Impact
+            et qui deviendront des trésors précieux dans votre collection personnelle.
+        </p>
+        <p>
+            Explorez notre boutique en ligne dès maintenant et plongez dans un monde de possibilités infinies
+            avec "Teyvat Saloon" - là où la magie devient tangible et où l'aventure commence !
+        </p>
+    </div>
+</div>
+<div class="reinsurance">
+    <h3 class="reinsurance__title">Faites Nous Confiance</h3>
+    <div class="reinsurance__section">
+        <div class="reinsurance__text">
+            <img src="{{ asset('images/france.svg') }}" alt="drapeau français">
+            <p>100% Français</p>
+        </div>
+        <div class="reinsurance__text">
+            <img src="{{ asset('images/truck.svg') }}" alt="camion">
+            <p>Livraison Rapide</p>
+        </div>
+        <div class="reinsurance__text">
+            <img src="{{ asset('images/padlock.svg') }}" alt="cadenas">
+            <p>Paiement Sécurisée</p>
+        </div>
+    </div>
+</div>
+<div class="services">
+    <h3 class="services__title">Nos produits</h3>
+    <div class="services__products">
+        <div class="card">
+            <h3>Figurines</h3>
+            <div class="card__content">
+                <img src="{{ asset('images/figurine-xiao.webp') }}" alt="figurine de xiao">
+                <div class="card__content__text">
+                    <p>
+                        Explorez l'univers envoûtant de Genshin Impact avec notre collection exceptionnelle de figurines chez "Teyvat Saloon".
+                        Chaque pièce est une véritable œuvre d'art, capturant fidèlement l'essence des héros emblématiques du jeu.
+                        Fabriquées avec un souci du détail exceptionnel et des matériaux de haute qualité,
+                        nos figurines offrent une expérience visuelle saisissante et une opportunité unique de posséder une part tangible du monde magique de Teyvat.
+                        Plongez dans l'aventure avec ces pièces maîtresses qui transforment chaque étagère en un sanctuaire dédié à l'amour de Genshin Impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Posters</h3>
+            <div class="card__content">
+                <div class="card__content__text">
+                    <p>
+                        Élevez votre espace à un niveau supérieur avec nos posters Genshin Impact chez "Teyvat Saloon".
+                        Chaque affiche est une fenêtre visuelle captivante sur les paysages épiques,
+                        les personnages charismatiques et les moments inoubliables de Teyvat.
+                        Imprimés avec une qualité exceptionnelle, nos posters apportent une touche d'aventure et de magie à chaque mur.
+                        Transformez votre chez-vous en un sanctuaire artistique avec nos posters,
+                        capturant la beauté vibrante de Genshin Impact et offrant une immersion totale dans cet univers fantastique.
+                    </p>
+                </div>
+                <img src="{{ asset('images/genshin-poster.jpg') }}" alt="Poster sur le thème genshin impact">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Peluches</h3>
+            <div class="card__content">
+                <img src="{{ asset('images/peluche-genshin.jpg') }}" alt="Peluches à l'effigie de blob de genshin impact">
+                <div class="card__content__text">
+                    <p>             
+                        Câlinez le charme de Teyvat avec nos adorables peluches Genshin Impact chez "Teyvat Saloon".
+                        Chaque peluche est une réplique douce et détaillée des héros préférés du jeu,
+                        prête à apporter une touche de tendresse à votre quotidien.
+                        Confectionnées avec des matériaux doux de première qualité,
+                        nos peluches vous offrent le réconfort de vos personnages favoris,
+                        créant une connexion chaleureuse avec l'univers magique de Genshin Impact.
+                        Adoptez une part de Teyvat avec nos peluches uniques,
+                        parfaites pour les collectionneurs ou pour partager un peu d'amour avec vos proches.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Porte-clés</h3>
+            <div class="card__content">
+                <div class="card__content__text">
+                    <p>
+                        Emportez une touche de l'aventure de Genshin Impact partout où vous allez avec nos porte-clés chez "Teyvat Saloon".
+                        Chaque porte-clé est une miniaturisation soignée d'objets emblématiques du jeu,
+                        ajoutant une note stylée à vos clés, sacs ou porte-monnaie.
+                        Fabriqués avec une attention particulière aux détails et à partir de matériaux durables, 
+                        nos porte-clés sont bien plus que de simples accessoires ; ils sont une déclaration d'amour pour cet univers fantastique. 
+                        Explorez la magie de Teyvat au quotidien avec nos porte-clés uniques,
+                        une invitation à emporter une partie de l'aventure partout où vous allez.
+                    </p>
+                </div>
+                <img src="{{ asset('images/porte-cle-genshin.webp') }}" alt="porte clé à l'effigie de personnages de genshin impact">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Voitures</h3>
+            <div class="card__content">
+                <img src="{{ asset('images/voiture-genshin.jpg') }}" alt="voiture à l'éffigie de barbara">
+                <div class="card__content__text">
+                    <p>
+                        Voyagez dans le luxe et l'élégance avec nos voitures Genshin Impact chez "Teyvat Saloon".
+                        Chaque modèle est une fusion parfaite entre le design automobile haut de gamme et la magie enchanteresse de Teyvat.
+                        Des lignes raffinées aux détails inspirés du jeu,
+                        nos voitures à l'effigie des personnages préférés offrent une expérience de conduite exceptionnelle.
+                        Chez "Teyvat Saloon", nous vous invitons à redéfinir votre trajet quotidien en une aventure luxueuse,
+                        où chaque kilomètre devient une célébration de l'univers captivant de Genshin Impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -2,8 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <title>{% block title %} Teyvat Saloon {% endblock %}</title>
+        <link rel="icon" href="/images/voeux.png">
         {% block stylesheets %}
         {% endblock %}
 
@@ -12,6 +12,57 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <header>
+        <nav class="nav">
+            <img class="logo" src="{{ asset('/images/voeux.png') }}" alt="logo">
+            <ul class="nav__list">
+                <li>
+                    <a href="{{ path('app_home_index')}}">Accueil</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_about_index')}}">À propos</a>
+                </li>
+                <li>
+                    <a href="{{ path('app_services_index')}}">Nos Services</a>
+                </li>
+            </ul>
+            <button class="nav__menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </button>
+            <button class="nav__button">
+                <a href="{{ path('app_contact_index')}}">Nous Contacter</a>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <h1>Teyvat Saloon</h1>
+        {% block body %}
+        
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="footer__column">
+            <div class="footer__column__link">
+                <p>Nous Contacter</p>
+                <p>Adresse : 70, rue des Jacobins, 80000 Amiens</p>
+                <p>Tél : 09 86 27 17 04</p>
+                <a href="{{ path('app_contact_index')}}">Email</a>
+            </div>
+            <div class="footer__column__link">
+                <a href="{{ path('app_home_index')}}">Accueil</a>
+                <a href="{{ path('app_about_index')}}">À propos</a>
+                <a href="{{ path('app_services_index')}}">Nos services</a>
+            </div>
+            <div class="footer__column__link">
+                <a href="{{ path('app_contact_index')}}">Nous Contacter</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions d'utilisations</a>
+            </div>
+            <img class="footer__column__img" src="{{ asset('/images/voeux.png') }}" alt="logo">
+        </div>
+        <div class="footer__line">
+            <p>Teyvat Saloon - 2024.</p>
+        </div>
+    </footer>
     </body>
 </html>

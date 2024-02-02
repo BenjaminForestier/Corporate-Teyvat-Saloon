@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as m;
+
+.contact_container {
+    width: 100%;
+    @include m.dflex(row, wrap, space-around, center, 0px);
+    padding-bottom: 10vh;
+}
+
+.contact {
+    @include m.dflex(column, wrap, space-between, center, 1rem);
+    @include m.setcolor(primary);
+    @include m.setbgcolor(bloc);
+    @include m.setfont(text);
+    border-radius: 10px;
+    border: none;
+    padding: 1rem;
+    &__title {
+        @include m.setcolor(light);
+        @include m.setfont(title);
+    }
+}

@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+@mixin btn($radius, $typos, $bgcolor, $size) {
+    @include m.dflex(row, wrap, space-around, center, 0px);
+    @include m.setfont($typos);
+    @include m.setbgcolor($bgcolor);
+    border-radius: $radius;
+    font-size: $size;
+    cursor: pointer;
+}
+
+@mixin btn_padding($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}

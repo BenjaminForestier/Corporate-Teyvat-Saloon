@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as m;
+
+body {
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    @include m.dflex(column, wrap, center, center, 2rem);
+    line-height: 2rem;
+}

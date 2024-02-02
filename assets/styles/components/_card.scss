@@ -1,0 +1,48 @@
+@use '../abstracts/mixins' as m;
+
+.card {
+    @include m.dflex(column, wrap, space-between, center, 0px);
+    @include m.setbgcolor(bloc);
+    padding: 1.5rem;
+    width: 80vw;
+    border-radius: 10px;
+    h3 {
+        @include m.setfont(title);
+        @include m.setcolor(light);
+        padding-bottom: 1rem;
+    }
+    &__content{
+        @include m.dflex(row, wrap, space-between, center, 2rem);
+        @include m.setfont(text);
+        @include m.setcolor(primary);
+        &__text {
+            width: 70%;
+            text-align: center;
+            @include m.dflex(column, wrap, center, center, 1rem);
+        }
+        img {
+            width: 100%;
+            max-width: 20rem;
+        }
+    }
+    @media screen and (max-width: 1470px) {
+        width: 90vw;
+        h3 {
+            font-size: 2rem;
+        }
+    
+        &__content {
+            @include m.dflex(column, wrap, center, center, 1rem);
+    
+            &__text {
+                width: 100%;
+                font-size: 0.8rem;
+            }
+    
+            img {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    }
+}

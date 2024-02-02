@@ -10,6 +10,3 @@ function toggleMenu() {
 }
 
 menu.addEventListener('click', toggleMenu);
-
-
-// burgermenu.style.display = (burgermenu.style.display === "block") ? "none" : "block";

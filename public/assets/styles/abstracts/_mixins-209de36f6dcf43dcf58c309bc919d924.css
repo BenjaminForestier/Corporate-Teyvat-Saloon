@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+
+@mixin dflex ($direction, $wrap, $justify, $align, $gap) {
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin setcolor($color)
+{
+    color: map-get($map: v.$colors, $key: $color);
+}
+
+@mixin setbgcolor($color)
+{
+    background-color: map-get($map: v.$colors, $key: $color);
+}
+
+@mixin setfont($font)
+{
+    font-family: map-get($map: v.$typos, $key: $font);
+}

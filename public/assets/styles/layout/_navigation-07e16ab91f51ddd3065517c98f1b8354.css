@@ -1,0 +1,49 @@
+@use '../abstracts/mixins' as m;
+@use '../components/buttons' as b;
+
+.nav {
+    @include m.setbgcolor(bloc);
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    @include m.setfont(text);
+    @include m.dflex(row, wrap, space-between, center, 0px);
+    .logo {
+        height: 10vh
+    }
+    .nav__list {
+        @include m.dflex(row, wrap, center, center, 5rem);
+        height: 100%;
+        // width: 50%;
+        li {
+            a {
+                @include m.setcolor(light);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__button {
+        @include b.btn(10px, text, primary, 1.2rem);
+        @include b.btn_padding(0.5rem, 1rem, 0.5rem, 1rem);
+        a {
+            @include m.setcolor(light);
+        }
+    }
+    &__menu {
+        display: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        z-index: 1;
+        @include m.setbgcolor(primary);
+        svg {
+            width: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: block;
+    }
+}

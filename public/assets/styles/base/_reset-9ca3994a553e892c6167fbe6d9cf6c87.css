@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as m;
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none; 
+    list-style: none;
+    scroll-behavior: smooth;
+}

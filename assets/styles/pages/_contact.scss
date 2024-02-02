@@ -4,6 +4,9 @@
     width: 100%;
     @include m.dflex(row, wrap, space-around, center, 0px);
     padding-bottom: 10vh;
+    @media screen and (max-width: 768px) {
+        @include m.dflex(column, wrap, space-around, center, 2rem);
+    }
 }
 
 .contact {
@@ -17,5 +20,9 @@
     &__title {
         @include m.setcolor(light);
         @include m.setfont(title);
+    }
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        font-size: 1rem;
     }
 }

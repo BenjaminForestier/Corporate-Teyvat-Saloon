@@ -12,13 +12,13 @@
     border-radius: 10px;
     padding: 1rem;
     width: 80%;
-    @media screen and (max-width: 1470px) {
+    @media screen and (max-width: 768px) {
         width: 90%;
     }
     &__title {
         @include m.setfont(title);
         font-size: 1.5rem;
-        @media screen and (max-width: 1470px) {
+        @media screen and (max-width: 768px) {
             font-size: 3rem;
             padding-bottom: 2rem;
         }
@@ -29,7 +29,7 @@
         &__strong {
             font-weight: bold;
         }
-        @media screen and (max-width: 1470px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.9rem;
         }
     }

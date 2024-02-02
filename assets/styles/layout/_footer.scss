@@ -22,8 +22,9 @@
         border-top: 1px solid #323232;
         text-align: center;
     }
-    @media screen and (max-width: 1470px) {
-    font-size: 2rem;
+    @media screen and (max-width: 768px) {
+        padding-top: 5vh;
+        font-size: 1rem;
         &__column {
             padding: 0.5rem;
             @include m.dflex(column, wrap, center, center, 2rem);

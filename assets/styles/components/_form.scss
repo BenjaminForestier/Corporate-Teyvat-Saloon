@@ -29,4 +29,9 @@
         @include b.btn(10px, text, primary, 1.5rem);
         @include b.btn_padding(0.5rem, 2rem, 0.5rem, 2rem);
     }
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+        border-radius: 0px;
+        font-size: 2rem;
+    }
 }

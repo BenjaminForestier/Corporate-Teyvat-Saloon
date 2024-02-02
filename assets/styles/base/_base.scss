@@ -12,3 +12,17 @@ main {
     @include m.dflex(column, wrap, center, center, 2rem);
     line-height: 2rem;
 }
+
+@media screen  and (max-width: 768px) {
+    .show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #333333e0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+    }
+}
